@@ -8,7 +8,8 @@
 #import<CommonCrypto/CommonDigest.h>
 #import "ViewController.h"
 #import "ViewController2.h"
-@interface ViewController ()
+#import "CocoaAsyncSocket.h"
+@interface ViewController ()<GCDAsyncUdpSocketDelegate>
 {
     UISearchBar *search;
 }
@@ -28,19 +29,44 @@
     str = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
     NSDictionary *temp = [self torrnet:str];
     for (NSArray *arr in temp[@"announce-list"]) {
-        NSString *host = [arr firstObject];
+        NSString *uri = [arr firstObject];
         NSError *error;
         NSURLResponse *resp;
-        NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@&peer_id=%@&uploaded=%@&downloaded=%@&left=%@&compact=%@&event=started",host,temp[@"sha1"],@"19089278372819205789",@"0",@"0",temp[@"info"][@"length"],@"1"];
-        //    NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@",temp[@"announce"],temp[@"sha1"]];
+        NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@&peer_id=%@&uploaded=%@&downloaded=%@&left=%@&compact=%@&event=started",uri,temp[@"sha1"],@"19089278372819205789",@"0",@"0",temp[@"info"][@"length"],@"1"];
         NSURL *urlss = [NSURL URLWithString:url];
+        NSString *scheme = [urlss.scheme lowercaseString];
+        NSString *port = [[urlss.port stringValue] lowercaseString];
+        NSString *host = urlss.host;
+        if ([scheme isEqualToString:@"udp"]) {
+            GCDAsyncUdpSocket * _udpSocket = [[GCDAsyncUdpSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+            NSError * error = nil;
+            [_udpSocket bindToPort:[port intValue] error:&error];
+            if (error) {//监听错误打印错误信息
+                NSLog(@"error:%@",error);
+            }else {//监听成功则开始接收信息
+                [_udpSocket beginReceiving:&error];
+            }
+            [_udpSocket sendData:sendData toHost:host port:udpPort withTimeout:-1 tag:0];
+        }
         NSData *datat = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:urlss] returningResponse:&resp error:&error];
         NSString *xxxx = [[NSString alloc] initWithData:datat encoding:NSASCIIStringEncoding];
         NSLog(@"%@",xxxx);
     }
     
 }
+- (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag
+{
+    NSLog(@"发送信息成功");
+}
 
+- (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError *)error
+{
+    NSLog(@"发送信息失败");
+}
+- (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
+{
+    NSLog(@"接收到%@的消息:%@",address,data);//自行转换格式吧
+}
 NS_ENUM(NSInteger,Type)
 {
     DictionaryType = 1,
@@ -50,7 +76,6 @@ NS_ENUM(NSInteger,Type)
 
 -(NSDictionary *)torrnet:(NSString *)str
 {
-    //    str = [[NSString alloc] initWithData:data encoding:NSMacOSRomanStringEncoding];
     //    3:abc             \d+:
     //    d3:defe           d^e$
     //    i3e               i\d+e

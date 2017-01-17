@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF561E2E01EA00F195C6 /* Documentation.html */; };
+		691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */; };
+		691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */; };
 		69285A501E2797DE005821A0 /* abc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4D1E2797DE005821A0 /* abc.txt */; };
 		69285A511E2797DE005821A0 /* test 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4E1E2797DE005821A0 /* test 2.txt */; };
 		69285A521E2797DE005821A0 /* test.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4F1E2797DE005821A0 /* test.torrent */; };
@@ -20,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		691EEF541E2E01EA00F195C6 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		691EEF561E2E01EA00F195C6 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		691EEF571E2E01EA00F195C6 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		691EEF591E2E01EA00F195C6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		69285A4D1E2797DE005821A0 /* abc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.txt; sourceTree = "<group>"; };
 		69285A4E1E2797DE005821A0 /* test 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test 2.txt"; sourceTree = "<group>"; };
 		69285A4F1E2797DE005821A0 /* test.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.torrent; sourceTree = "<group>"; };
@@ -48,9 +57,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691EEF521E2E01EA00F195C6 /* Verdor */ = {
+			isa = PBXGroup;
+			children = (
+				691EEF531E2E01EA00F195C6 /* AsyncSocket */,
+			);
+			path = Verdor;
+			sourceTree = "<group>";
+		};
+		691EEF531E2E01EA00F195C6 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				691EEF541E2E01EA00F195C6 /* CocoaAsyncSocket.h */,
+				691EEF551E2E01EA00F195C6 /* GCD */,
+			);
+			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		691EEF551E2E01EA00F195C6 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				691EEF561E2E01EA00F195C6 /* Documentation.html */,
+				691EEF571E2E01EA00F195C6 /* GCDAsyncSocket.h */,
+				691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */,
+				691EEF591E2E01EA00F195C6 /* GCDAsyncUdpSocket.h */,
+				691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 		69ED71951E13A1A400E88CEB = {
 			isa = PBXGroup;
 			children = (
+				691EEF521E2E01EA00F195C6 /* Verdor */,
 				69ED71A01E13A1A400E88CEB /* DingHaoReader */,
 				69ED719F1E13A1A400E88CEB /* Products */,
 			);
@@ -156,6 +195,7 @@
 				69ED71AC1E13A1A400E88CEB /* Main.storyboard in Resources */,
 				69285A511E2797DE005821A0 /* test 2.txt in Resources */,
 				69285A521E2797DE005821A0 /* test.torrent in Resources */,
+				691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */,
 				69285A501E2797DE005821A0 /* abc.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,8 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ED71A91E13A1A400E88CEB /* ViewController.m in Sources */,
+				691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */,
 				69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */,
 				69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */,
+				691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */,
 				69ED71A31E13A1A400E88CEB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
