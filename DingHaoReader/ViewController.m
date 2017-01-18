@@ -19,8 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"abc" ofType:@"txt"];
-    file = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"torrent"];
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv" ofType:@"torrent"];
+//    file = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"torrent"];
     
     NSError *eror;
     NSData *data =
@@ -33,7 +33,7 @@
         NSString *uri = [arr firstObject];
         NSError *error;
         NSURLResponse *resp;
-        NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@&peer_id=%@&uploaded=%@&downloaded=%@&left=%@&compact=%@&event=started",uri,temp[@"sha1"],@"19089278372819205789",@"0",@"0",temp[@"info"][@"length"],@"1"];
+        NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@&peer_id=%@&uploaded=%@&downloaded=%@&left=%@&compact=%@&event=started&port=10775",uri,temp[@"sha1"],@"19089278372819205789",@"0",@"0",temp[@"info"][@"length"],@"1"];
         NSURL *urlss = [NSURL URLWithString:url];
         NSString *scheme = [urlss.scheme lowercaseString];
         NSString *port = [[urlss.port stringValue] lowercaseString];
