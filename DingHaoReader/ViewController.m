@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ViewController2.h"
 #import "CocoaAsyncSocket.h"
+#import "AFNetworking.h"
 @interface ViewController ()<GCDAsyncUdpSocketDelegate>
 {
     UISearchBar *search;
@@ -49,9 +50,23 @@
 //            }
 //            [_udpSocket sendData:sendData toHost:host port:udpPort withTimeout:-1 tag:0];
         }
-        NSData *datat = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:urlss] returningResponse:&resp error:&error];
-        NSString *xxxx = [[NSString alloc] initWithData:datat encoding:NSASCIIStringEncoding];
-        NSLog(@"%@",xxxx);
+        
+        AFHTTPSessionManager *mg = [AFHTTPSessionManager manager];
+        [mg GET:uri parameters:@{@"info_hash":temp[@"sha1"],
+                                 @"peer_id":@"19089278372819205789",
+                                 @"uploaded":@"0",
+                                 @"downloaded":@"0",
+                                 @"left":temp[@"info"][@"length"],
+                                 @"compact":@"1",
+                                 @"event":@"started",
+                                 @"port":@"10775"} progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
+
     }
     
 }
