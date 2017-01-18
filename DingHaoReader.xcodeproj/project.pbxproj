@@ -10,6 +10,8 @@
 		691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF561E2E01EA00F195C6 /* Documentation.html */; };
 		691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */; };
 		691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */; };
+		691EEF641E2F082A00F195C6 /* Bdecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF631E2F082A00F195C6 /* Bdecoder.m */; };
+		691EEF661E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */; };
 		69285A501E2797DE005821A0 /* abc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4D1E2797DE005821A0 /* abc.txt */; };
 		69285A511E2797DE005821A0 /* test 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4E1E2797DE005821A0 /* test 2.txt */; };
 		69285A521E2797DE005821A0 /* test.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4F1E2797DE005821A0 /* test.torrent */; };
@@ -29,6 +31,9 @@
 		691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		691EEF591E2E01EA00F195C6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		691EEF621E2F082A00F195C6 /* Bdecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bdecoder.h; sourceTree = "<group>"; };
+		691EEF631E2F082A00F195C6 /* Bdecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bdecoder.m; sourceTree = "<group>"; };
+		691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent"; sourceTree = "<group>"; };
 		69285A4D1E2797DE005821A0 /* abc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.txt; sourceTree = "<group>"; };
 		69285A4E1E2797DE005821A0 /* test 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test 2.txt"; sourceTree = "<group>"; };
 		69285A4F1E2797DE005821A0 /* test.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.torrent; sourceTree = "<group>"; };
@@ -86,9 +91,19 @@
 			path = GCD;
 			sourceTree = "<group>";
 		};
+		691EEF611E2F082A00F195C6 /* BT */ = {
+			isa = PBXGroup;
+			children = (
+				691EEF621E2F082A00F195C6 /* Bdecoder.h */,
+				691EEF631E2F082A00F195C6 /* Bdecoder.m */,
+			);
+			path = BT;
+			sourceTree = "<group>";
+		};
 		69ED71951E13A1A400E88CEB = {
 			isa = PBXGroup;
 			children = (
+				691EEF611E2F082A00F195C6 /* BT */,
 				691EEF521E2E01EA00F195C6 /* Verdor */,
 				69ED71A01E13A1A400E88CEB /* DingHaoReader */,
 				69ED719F1E13A1A400E88CEB /* Products */,
@@ -106,6 +121,7 @@
 		69ED71A01E13A1A400E88CEB /* DingHaoReader */ = {
 			isa = PBXGroup;
 			children = (
+				691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */,
 				69285A4D1E2797DE005821A0 /* abc.txt */,
 				69285A4E1E2797DE005821A0 /* test 2.txt */,
 				69285A4F1E2797DE005821A0 /* test.torrent */,
@@ -194,6 +210,7 @@
 				69ED71AE1E13A1A500E88CEB /* Assets.xcassets in Resources */,
 				69ED71AC1E13A1A400E88CEB /* Main.storyboard in Resources */,
 				69285A511E2797DE005821A0 /* test 2.txt in Resources */,
+				691EEF661E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */,
 				69285A521E2797DE005821A0 /* test.torrent in Resources */,
 				691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */,
 				69285A501E2797DE005821A0 /* abc.txt in Resources */,
@@ -211,6 +228,7 @@
 				691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */,
 				69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */,
 				69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */,
+				691EEF641E2F082A00F195C6 /* Bdecoder.m in Sources */,
 				691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */,
 				69ED71A31E13A1A400E88CEB /* main.m in Sources */,
 			);

@@ -24,7 +24,7 @@
     [super viewDidLoad];
     queue = dispatch_queue_create("com.ConcurrentQueue",DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(queue, ^{
-        self;
+        
     });
 }
 
