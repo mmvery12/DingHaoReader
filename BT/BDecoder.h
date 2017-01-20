@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Bdecoder : NSObject
+@interface BDecoder : NSObject
 +(id)BInfoDecoder:(NSData *)infodata;
 @end

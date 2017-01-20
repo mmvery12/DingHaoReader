@@ -10,23 +10,29 @@
 		691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF561E2E01EA00F195C6 /* Documentation.html */; };
 		691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */; };
 		691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */; };
-		691EEF641E2F082A00F195C6 /* Bdecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF631E2F082A00F195C6 /* Bdecoder.m */; };
-		691EEF661E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */; };
+		691EEF641E2F082A00F195C6 /* BDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF631E2F082A00F195C6 /* BDecoder.m */; };
 		691EEF751E2F88A200F195C6 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF691E2F88A200F195C6 /* AFHTTPSessionManager.m */; };
 		691EEF761E2F88A200F195C6 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF6C1E2F88A200F195C6 /* AFNetworkReachabilityManager.m */; };
 		691EEF771E2F88A200F195C6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF6E1E2F88A200F195C6 /* AFSecurityPolicy.m */; };
 		691EEF781E2F88A200F195C6 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF701E2F88A200F195C6 /* AFURLRequestSerialization.m */; };
 		691EEF791E2F88A200F195C6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF721E2F88A200F195C6 /* AFURLResponseSerialization.m */; };
 		691EEF7A1E2F88A200F195C6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF741E2F88A200F195C6 /* AFURLSessionManager.m */; };
-		69285A501E2797DE005821A0 /* abc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4D1E2797DE005821A0 /* abc.txt */; };
-		69285A511E2797DE005821A0 /* test 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4E1E2797DE005821A0 /* test 2.txt */; };
-		69285A521E2797DE005821A0 /* test.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 69285A4F1E2797DE005821A0 /* test.torrent */; };
-		69ED71A31E13A1A400E88CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71A21E13A1A400E88CEB /* main.m */; };
+		691EEF7F1E3097A800F195C6 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF7E1E3097A800F195C6 /* Tracker.m */; };
+		691EEF821E30983900F195C6 /* TrackerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF811E30983900F195C6 /* TrackerInfo.m */; };
+		691EEFA11E31E61B00F195C6 /* abc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF951E31E61B00F195C6 /* abc.txt */; };
+		691EEFA21E31E61B00F195C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF961E31E61B00F195C6 /* Assets.xcassets */; };
+		691EEFA31E31E61B00F195C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF971E31E61B00F195C6 /* LaunchScreen.storyboard */; };
+		691EEFA41E31E61B00F195C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF991E31E61B00F195C6 /* Main.storyboard */; };
+		691EEFA51E31E61B00F195C6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF9B1E31E61B00F195C6 /* Info.plist */; };
+		691EEFA61E31E61B00F195C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF9C1E31E61B00F195C6 /* main.m */; };
+		691EEFA71E31E61B00F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF9D1E31E61B00F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */; };
+		691EEFA81E31E61B00F195C6 /* test 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF9E1E31E61B00F195C6 /* test 2.txt */; };
+		691EEFA91E31E61B00F195C6 /* test.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF9F1E31E61B00F195C6 /* test.torrent */; };
+		691EEFAA1E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEFA01E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent */; };
+		691EEFAE1E31E6C500F195C6 /* NSObject+Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */; };
+		691EEFB01E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEFAF1E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent */; };
 		69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71A51E13A1A400E88CEB /* AppDelegate.m */; };
 		69ED71A91E13A1A400E88CEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71A81E13A1A400E88CEB /* ViewController.m */; };
-		69ED71AC1E13A1A400E88CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ED71AA1E13A1A400E88CEB /* Main.storyboard */; };
-		69ED71AE1E13A1A500E88CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ED71AD1E13A1A500E88CEB /* Assets.xcassets */; };
-		69ED71B11E13A1A500E88CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69ED71AF1E13A1A500E88CEB /* LaunchScreen.storyboard */; };
 		69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71B91E13AC4000E88CEB /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
@@ -37,9 +43,8 @@
 		691EEF581E2E01EA00F195C6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 		691EEF591E2E01EA00F195C6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		691EEF5A1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
-		691EEF621E2F082A00F195C6 /* Bdecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bdecoder.h; sourceTree = "<group>"; };
-		691EEF631E2F082A00F195C6 /* Bdecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bdecoder.m; sourceTree = "<group>"; };
-		691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent"; sourceTree = "<group>"; };
+		691EEF621E2F082A00F195C6 /* BDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDecoder.h; sourceTree = "<group>"; };
+		691EEF631E2F082A00F195C6 /* BDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDecoder.m; sourceTree = "<group>"; };
 		691EEF681E2F88A200F195C6 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		691EEF691E2F88A200F195C6 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		691EEF6A1E2F88A200F195C6 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -53,19 +58,29 @@
 		691EEF721E2F88A200F195C6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		691EEF731E2F88A200F195C6 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		691EEF741E2F88A200F195C6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		69285A4D1E2797DE005821A0 /* abc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.txt; sourceTree = "<group>"; };
-		69285A4E1E2797DE005821A0 /* test 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test 2.txt"; sourceTree = "<group>"; };
-		69285A4F1E2797DE005821A0 /* test.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.torrent; sourceTree = "<group>"; };
+		691EEF7D1E3097A800F195C6 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		691EEF7E1E3097A800F195C6 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
+		691EEF801E30983900F195C6 /* TrackerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerInfo.h; sourceTree = "<group>"; };
+		691EEF811E30983900F195C6 /* TrackerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerInfo.m; sourceTree = "<group>"; };
+		691EEF951E31E61B00F195C6 /* abc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.txt; sourceTree = "<group>"; };
+		691EEF961E31E61B00F195C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		691EEF981E31E61B00F195C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		691EEF9A1E31E61B00F195C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		691EEF9B1E31E61B00F195C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		691EEF9C1E31E61B00F195C6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		691EEF9D1E31E61B00F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent"; sourceTree = "<group>"; };
+		691EEF9E1E31E61B00F195C6 /* test 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test 2.txt"; sourceTree = "<group>"; };
+		691EEF9F1E31E61B00F195C6 /* test.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.torrent; sourceTree = "<group>"; };
+		691EEFA01E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent"; sourceTree = "<group>"; };
+		691EEFAB1E31E65400F195C6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		691EEFAC1E31E6C500F195C6 /* NSObject+Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Entity.h"; sourceTree = "<group>"; };
+		691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Entity.m"; sourceTree = "<group>"; };
+		691EEFAF1E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent"; sourceTree = "<group>"; };
 		69ED719E1E13A1A400E88CEB /* DingHaoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingHaoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		69ED71A21E13A1A400E88CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69ED71A41E13A1A400E88CEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69ED71A51E13A1A400E88CEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		69ED71A71E13A1A400E88CEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		69ED71A81E13A1A400E88CEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		69ED71AB1E13A1A400E88CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69ED71AD1E13A1A500E88CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		69ED71B01E13A1A500E88CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		69ED71B21E13A1A500E88CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69ED71B81E13AC4000E88CEB /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		69ED71B91E13AC4000E88CEB /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,8 +129,12 @@
 		691EEF611E2F082A00F195C6 /* BT */ = {
 			isa = PBXGroup;
 			children = (
-				691EEF621E2F082A00F195C6 /* Bdecoder.h */,
-				691EEF631E2F082A00F195C6 /* Bdecoder.m */,
+				691EEF621E2F082A00F195C6 /* BDecoder.h */,
+				691EEF631E2F082A00F195C6 /* BDecoder.m */,
+				691EEF7D1E3097A800F195C6 /* Tracker.h */,
+				691EEF7E1E3097A800F195C6 /* Tracker.m */,
+				691EEF801E30983900F195C6 /* TrackerInfo.h */,
+				691EEF811E30983900F195C6 /* TrackerInfo.m */,
 			);
 			path = BT;
 			sourceTree = "<group>";
@@ -140,9 +159,39 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		691EEF831E309E0D00F195C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				691EEFAC1E31E6C500F195C6 /* NSObject+Entity.h */,
+				691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		691EEF941E31E61B00F195C6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				691EEFAF1E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent */,
+				691EEF951E31E61B00F195C6 /* abc.txt */,
+				691EEF961E31E61B00F195C6 /* Assets.xcassets */,
+				691EEF971E31E61B00F195C6 /* LaunchScreen.storyboard */,
+				691EEF991E31E61B00F195C6 /* Main.storyboard */,
+				691EEF9B1E31E61B00F195C6 /* Info.plist */,
+				691EEF9C1E31E61B00F195C6 /* main.m */,
+				691EEF9D1E31E61B00F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */,
+				691EEF9E1E31E61B00F195C6 /* test 2.txt */,
+				691EEF9F1E31E61B00F195C6 /* test.torrent */,
+				691EEFA01E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent */,
+				691EEFAB1E31E65400F195C6 /* PrefixHeader.pch */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		69ED71951E13A1A400E88CEB = {
 			isa = PBXGroup;
 			children = (
+				691EEF941E31E61B00F195C6 /* Resource */,
+				691EEF831E309E0D00F195C6 /* Model */,
 				691EEF611E2F082A00F195C6 /* BT */,
 				691EEF521E2E01EA00F195C6 /* Verdor */,
 				69ED71A01E13A1A400E88CEB /* DingHaoReader */,
@@ -161,31 +210,14 @@
 		69ED71A01E13A1A400E88CEB /* DingHaoReader */ = {
 			isa = PBXGroup;
 			children = (
-				691EEF651E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent */,
-				69285A4D1E2797DE005821A0 /* abc.txt */,
-				69285A4E1E2797DE005821A0 /* test 2.txt */,
-				69285A4F1E2797DE005821A0 /* test.torrent */,
 				69ED71A41E13A1A400E88CEB /* AppDelegate.h */,
 				69ED71A51E13A1A400E88CEB /* AppDelegate.m */,
 				69ED71A71E13A1A400E88CEB /* ViewController.h */,
 				69ED71A81E13A1A400E88CEB /* ViewController.m */,
-				69ED71AA1E13A1A400E88CEB /* Main.storyboard */,
-				69ED71AD1E13A1A500E88CEB /* Assets.xcassets */,
-				69ED71AF1E13A1A500E88CEB /* LaunchScreen.storyboard */,
-				69ED71B21E13A1A500E88CEB /* Info.plist */,
-				69ED71A11E13A1A400E88CEB /* Supporting Files */,
 				69ED71B81E13AC4000E88CEB /* ViewController2.h */,
 				69ED71B91E13AC4000E88CEB /* ViewController2.m */,
 			);
 			path = DingHaoReader;
-			sourceTree = "<group>";
-		};
-		69ED71A11E13A1A400E88CEB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				69ED71A21E13A1A400E88CEB /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,14 +278,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69ED71B11E13A1A500E88CEB /* LaunchScreen.storyboard in Resources */,
-				69ED71AE1E13A1A500E88CEB /* Assets.xcassets in Resources */,
-				69ED71AC1E13A1A400E88CEB /* Main.storyboard in Resources */,
-				69285A511E2797DE005821A0 /* test 2.txt in Resources */,
-				691EEF661E2F554000F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */,
-				69285A521E2797DE005821A0 /* test.torrent in Resources */,
+				691EEFA51E31E61B00F195C6 /* Info.plist in Resources */,
+				691EEFAA1E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent in Resources */,
+				691EEFA41E31E61B00F195C6 /* Main.storyboard in Resources */,
+				691EEFB01E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent in Resources */,
 				691EEF5B1E2E01EA00F195C6 /* Documentation.html in Resources */,
-				69285A501E2797DE005821A0 /* abc.txt in Resources */,
+				691EEFA31E31E61B00F195C6 /* LaunchScreen.storyboard in Resources */,
+				691EEFA11E31E61B00F195C6 /* abc.txt in Resources */,
+				691EEFA21E31E61B00F195C6 /* Assets.xcassets in Resources */,
+				691EEFA81E31E61B00F195C6 /* test 2.txt in Resources */,
+				691EEFA91E31E61B00F195C6 /* test.torrent in Resources */,
+				691EEFA71E31E61B00F195C6 /* shadowhunters the mortal instruments s02e02 hdtv x264-fleeteztv mkv.torrent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,13 +304,16 @@
 				691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */,
 				69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */,
 				69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */,
-				691EEF641E2F082A00F195C6 /* Bdecoder.m in Sources */,
+				691EEFA61E31E61B00F195C6 /* main.m in Sources */,
+				691EEF641E2F082A00F195C6 /* BDecoder.m in Sources */,
 				691EEF771E2F88A200F195C6 /* AFSecurityPolicy.m in Sources */,
 				691EEF781E2F88A200F195C6 /* AFURLRequestSerialization.m in Sources */,
 				691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */,
-				69ED71A31E13A1A400E88CEB /* main.m in Sources */,
+				691EEF821E30983900F195C6 /* TrackerInfo.m in Sources */,
 				691EEF791E2F88A200F195C6 /* AFURLResponseSerialization.m in Sources */,
+				691EEFAE1E31E6C500F195C6 /* NSObject+Entity.m in Sources */,
 				691EEF7A1E2F88A200F195C6 /* AFURLSessionManager.m in Sources */,
+				691EEF7F1E3097A800F195C6 /* Tracker.m in Sources */,
 				691EEF751E2F88A200F195C6 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,20 +321,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		69ED71AA1E13A1A400E88CEB /* Main.storyboard */ = {
+		691EEF971E31E61B00F195C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69ED71AB1E13A1A400E88CEB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		69ED71AF1E13A1A500E88CEB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69ED71B01E13A1A500E88CEB /* Base */,
+				691EEF981E31E61B00F195C6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		691EEF991E31E61B00F195C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				691EEF9A1E31E61B00F195C6 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -394,7 +432,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DingHaoReader/Info.plist;
+				GCC_PREFIX_HEADER = Resource/PrefixHeader.pch;
+				INFOPLIST_FILE = Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LYC.DingHaoReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,7 +444,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DingHaoReader/Info.plist;
+				GCC_PREFIX_HEADER = Resource/PrefixHeader.pch;
+				INFOPLIST_FILE = Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LYC.DingHaoReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";

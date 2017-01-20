@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  DingHaoReader
+//
+//  Created by JD on 17/1/20.
+//  Copyright © 2017年 LYC. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "NSObject+Entity.h"
+
+#endif /* PrefixHeader_pch */
