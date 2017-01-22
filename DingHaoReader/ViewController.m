@@ -42,14 +42,11 @@
     mg.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
     mg.requestSerializer.timeoutInterval = 300;
 //
-    NSData *tdata = temp[@"sha1_data"];
-    tdata = temp[@"peer_id"];
     
-    for (NSArray *arr in temp[@"announce-list"]) {
-        NSString *uri = [arr firstObject];
+    for (NSArray *arr in tracker.announcelist) {
+        NSString *url = [arr firstObject];
         NSError *error;
         NSURLResponse *resp;
-        NSString *url = [NSString stringWithFormat:@"%@?info_hash=%@&peer_id=%@&uploaded=%@&downloaded=%@&left=%@&compact=%@&event=started&port=10775",uri,temp[@"sha1"],@"19089278372819205789",@"0",@"0",temp[@"info"][@"length"],@"1"];
         NSURL *urlss = [NSURL URLWithString:url];
         NSString *scheme = [urlss.scheme lowercaseString];
         NSString *port = [[urlss.port stringValue] lowercaseString];
@@ -67,8 +64,7 @@
         }else
         {
             
-            
-            [mg GET:uri parameters:            @{@"info_hash":tracker.info_hash,
+            [mg GET:url parameters:            @{@"info_hash":tracker.info_hash,
                                                  @"peer_id":tracker.peer_id,
                                                  @"uploaded":@"0",
                                                  @"downloaded":@"0",
@@ -76,16 +72,15 @@
                                                  @"compact":@"1",
                                                  @"event":@"started",
                                                  @"port":@"6889"}
-
            progress:^(NSProgress * _Nonnull downloadProgress)
              {
                  NSLog(@"a");
              }
             success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
              {
-                 NSLog(@"a %@ %@",uri,[BDecoder BInfoDecoder:responseObject]);
+                 NSLog(@"a %@ %@",url,[BDecoder BInfoDecoder:responseObject]);
              } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                 NSLog(@"b %@",uri);
+                 NSLog(@"b %@",url);
              }];
         }
        

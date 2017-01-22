@@ -187,12 +187,6 @@ NS_ENUM(NSInteger,Type)
 {
     unsigned char source[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (uint32_t)data.length, source);
-    NSMutableString* output = [NSMutableString new];
-    for(int i = 0; i < CC_SHA1_DIGEST_LENGTH; i++)
-    {
-        NSString *str = [NSString stringWithFormat:@"%02x", source[i]];
-        //change value to 0x 
-    }
     return [self urlencoder:source];
 }
 
@@ -205,11 +199,31 @@ NS_ENUM(NSInteger,Type)
 
 +(NSString *)urlencoder:(char *)source
 {
-//const char source[20] = {0x12, 0x34, 0x56, 0x78, 0x9a, 0xbc, 0xde, 0xf1, 0x23, 0x45, 0x67, 0x89, 0xab, 0xcd, 0xef, 0x12, 0x34, 0x56, 0x78, 0x9a};
+//
+//const char source[20] = {0x0a, 0xf2, 0x44, 0x7f, 0xfd, 0x45, 0x17, 0x57, 0xdb, 0x2b, 0x73, 0x29, 0x65, 0xc0, 0xbc, 0x65, 0x95, 0xea, 0x78, 0x1e};
+//    const char source[20] = {
+//        0x0a,
+//        0xf2,
+//        0x44,
+//        0x7f,
+//        0xfd,
+//        0x45,
+//        0x17,
+//        0x57,
+//        0xdb,
+//        0x2b,
+//        0x73,
+//        0xc1,
+//        0x29,
+//        0x65,
+//        0xc0,
+//        0xbc,
+//        0x65,
+//        0x95,
+//        0xea,
+//        0x1e};
     NSMutableString *output = [NSMutableString string];
-    NSLog(@"Raw Data: %@", [NSData dataWithBytes:source length:20]);
-    int sourceLen = strlen(source);
-    for (int i = 0; i < sourceLen; ++i) {
+    for (int i = 0; i < 20; ++i) {
         const unsigned char thisChar = source[i];
         if (thisChar == ' '){
             [output appendString:@"+"];
