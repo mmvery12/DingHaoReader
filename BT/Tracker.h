@@ -16,7 +16,7 @@
 @property (nonatomic,copy)NSString *createdby;//：可选。制作.torrent文件的工具
 @property (nonatomic,copy)NSString *encoding;//：可选。发布的资源使用的编码方式
 @property (nonatomic,strong)TrackerInfo *info;
-@property (nonatomic,strong)NSData *info_hash;
-@property (nonatomic,strong)NSData *peer_id;
+@property (nonatomic,strong)NSString *info_hash;
+@property (nonatomic,strong)NSString *peer_id;
 @property (nonatomic,copy)NSString *HASH;
 @end

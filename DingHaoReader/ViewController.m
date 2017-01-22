@@ -66,14 +66,17 @@
 //            [_udpSocket sendData:sendData toHost:host port:udpPort withTimeout:-1 tag:0];
         }else
         {
-            [mg GET:uri parameters:@{@"info_hash":tracker.info_hash,
-                                     @"peer_id":tracker.peer_id,
-                                     @"uploaded":@"0",
-                                     @"downloaded":@"0",
-                                     @"left":@"206321100",
-                                     @"compact":@"1",
-                                     @"event":@"started",
-                                     @"port":@"6889"}
+            
+            
+            [mg GET:uri parameters:            @{@"info_hash":tracker.info_hash,
+                                                 @"peer_id":tracker.peer_id,
+                                                 @"uploaded":@"0",
+                                                 @"downloaded":@"0",
+                                                 @"left":@"206321100",
+                                                 @"compact":@"1",
+                                                 @"event":@"started",
+                                                 @"port":@"6889"}
+
            progress:^(NSProgress * _Nonnull downloadProgress)
              {
                  NSLog(@"a");
