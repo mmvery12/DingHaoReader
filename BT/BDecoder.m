@@ -233,9 +233,10 @@ NS_ENUM(NSInteger,Type)
                    (thisChar >= '0' && thisChar <= '9')) {
             [output appendFormat:@"%c", thisChar];
         } else {
-            [output appendFormat:@"%%%02X", thisChar];
+            [output appendFormat:@"\%%%02X", thisChar];
         }
     }
+    // % 会被afurlencoder成%25，
     return output;
 }
 
