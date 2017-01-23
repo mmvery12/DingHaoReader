@@ -52,15 +52,6 @@
         NSString *port = [[urlss.port stringValue] lowercaseString];
         NSString *host = urlss.host;
         if ([scheme isEqualToString:@"udp"]) {
-//            GCDAsyncUdpSocket * _udpSocket = [[GCDAsyncUdpSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-//            NSError * error = nil;
-//            [_udpSocket bindToPort:[port intValue] error:&error];
-//            if (error) {//监听错误打印错误信息
-//                NSLog(@"error:%@",error);
-//            }else {//监听成功则开始接收信息
-//                [_udpSocket beginReceiving:&error];
-//            }
-//            [_udpSocket sendData:sendData toHost:host port:udpPort withTimeout:-1 tag:0];
         }else
         {
             
@@ -69,7 +60,7 @@
                                                  @"uploaded":@"0",
                                                  @"downloaded":@"0",
                                                  @"left":@"206321100",
-                                                 @"compact":@"1",
+                                                 @"compact":@"0",
                                                  @"event":@"started",
                                                  @"port":@"6889"}
            progress:^(NSProgress * _Nonnull downloadProgress)

@@ -69,7 +69,7 @@ NSString * AFPercentEscapedStringFromString(NSString *string) {
         NSString *substring = [string substringWithRange:range];
         NSString *encoded = [substring stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacterSet];
         [escaped appendString:encoded];
-
+//        [escaped appendString:substring];
         index += range.length;
     }
 

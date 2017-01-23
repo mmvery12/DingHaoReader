@@ -17,8 +17,6 @@
 		691EEF781E2F88A200F195C6 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF701E2F88A200F195C6 /* AFURLRequestSerialization.m */; };
 		691EEF791E2F88A200F195C6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF721E2F88A200F195C6 /* AFURLResponseSerialization.m */; };
 		691EEF7A1E2F88A200F195C6 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF741E2F88A200F195C6 /* AFURLSessionManager.m */; };
-		691EEF7F1E3097A800F195C6 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF7E1E3097A800F195C6 /* Tracker.m */; };
-		691EEF821E30983900F195C6 /* TrackerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEF811E30983900F195C6 /* TrackerInfo.m */; };
 		691EEFA11E31E61B00F195C6 /* abc.txt in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF951E31E61B00F195C6 /* abc.txt */; };
 		691EEFA21E31E61B00F195C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF961E31E61B00F195C6 /* Assets.xcassets */; };
 		691EEFA31E31E61B00F195C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691EEF971E31E61B00F195C6 /* LaunchScreen.storyboard */; };
@@ -31,6 +29,9 @@
 		691EEFAA1E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEFA01E31E61B00F195C6 /* 功夫熊猫3.Kung.Fu.Panda.3.2016.Bluray.1080p.DTS-HD-7.1.x264-Grym.13.26GB[BTBT.INFO].torrent */; };
 		691EEFAE1E31E6C500F195C6 /* NSObject+Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */; };
 		691EEFB01E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent in Resources */ = {isa = PBXBuildFile; fileRef = 691EEFAF1E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent */; };
+		691EEFE41E35CD8D00F195C6 /* NetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEFE31E35CD8D00F195C6 /* NetManager.m */; };
+		691EEFE71E35EAA200F195C6 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEFE61E35EAA200F195C6 /* Tracker.m */; };
+		691EEFEA1E35EAC300F195C6 /* Announce.m in Sources */ = {isa = PBXBuildFile; fileRef = 691EEFE91E35EAC300F195C6 /* Announce.m */; };
 		69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71A51E13A1A400E88CEB /* AppDelegate.m */; };
 		69ED71A91E13A1A400E88CEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71A81E13A1A400E88CEB /* ViewController.m */; };
 		69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ED71B91E13AC4000E88CEB /* ViewController2.m */; };
@@ -58,10 +59,6 @@
 		691EEF721E2F88A200F195C6 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		691EEF731E2F88A200F195C6 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		691EEF741E2F88A200F195C6 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		691EEF7D1E3097A800F195C6 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
-		691EEF7E1E3097A800F195C6 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
-		691EEF801E30983900F195C6 /* TrackerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerInfo.h; sourceTree = "<group>"; };
-		691EEF811E30983900F195C6 /* TrackerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerInfo.m; sourceTree = "<group>"; };
 		691EEF951E31E61B00F195C6 /* abc.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abc.txt; sourceTree = "<group>"; };
 		691EEF961E31E61B00F195C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		691EEF981E31E61B00F195C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +73,12 @@
 		691EEFAC1E31E6C500F195C6 /* NSObject+Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Entity.h"; sourceTree = "<group>"; };
 		691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Entity.m"; sourceTree = "<group>"; };
 		691EEFAF1E32121000F195C6 /* 3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3DMGAME-The.Elder.Scrolls.V.Skyrim.Special.Edition.Cracked-3DM.torrent"; sourceTree = "<group>"; };
+		691EEFE21E35CD8D00F195C6 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		691EEFE31E35CD8D00F195C6 /* NetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetManager.m; sourceTree = "<group>"; };
+		691EEFE51E35EAA200F195C6 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		691EEFE61E35EAA200F195C6 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
+		691EEFE81E35EAC300F195C6 /* Announce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Announce.h; sourceTree = "<group>"; };
+		691EEFE91E35EAC300F195C6 /* Announce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Announce.m; sourceTree = "<group>"; };
 		69ED719E1E13A1A400E88CEB /* DingHaoReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingHaoReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ED71A41E13A1A400E88CEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69ED71A51E13A1A400E88CEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,10 +134,6 @@
 			children = (
 				691EEF621E2F082A00F195C6 /* BDecoder.h */,
 				691EEF631E2F082A00F195C6 /* BDecoder.m */,
-				691EEF7D1E3097A800F195C6 /* Tracker.h */,
-				691EEF7E1E3097A800F195C6 /* Tracker.m */,
-				691EEF801E30983900F195C6 /* TrackerInfo.h */,
-				691EEF811E30983900F195C6 /* TrackerInfo.m */,
 			);
 			path = BT;
 			sourceTree = "<group>";
@@ -162,6 +161,10 @@
 		691EEF831E309E0D00F195C6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				691EEFE51E35EAA200F195C6 /* Tracker.h */,
+				691EEFE61E35EAA200F195C6 /* Tracker.m */,
+				691EEFE81E35EAC300F195C6 /* Announce.h */,
+				691EEFE91E35EAC300F195C6 /* Announce.m */,
 				691EEFAC1E31E6C500F195C6 /* NSObject+Entity.h */,
 				691EEFAD1E31E6C500F195C6 /* NSObject+Entity.m */,
 			);
@@ -187,9 +190,19 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		691EEFE11E35AFDD00F195C6 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				691EEFE21E35CD8D00F195C6 /* NetManager.h */,
+				691EEFE31E35CD8D00F195C6 /* NetManager.m */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 		69ED71951E13A1A400E88CEB = {
 			isa = PBXGroup;
 			children = (
+				691EEFE11E35AFDD00F195C6 /* Net */,
 				691EEF941E31E61B00F195C6 /* Resource */,
 				691EEF831E309E0D00F195C6 /* Model */,
 				691EEF611E2F082A00F195C6 /* BT */,
@@ -299,21 +312,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691EEFE71E35EAA200F195C6 /* Tracker.m in Sources */,
 				69ED71A91E13A1A400E88CEB /* ViewController.m in Sources */,
 				691EEF761E2F88A200F195C6 /* AFNetworkReachabilityManager.m in Sources */,
 				691EEF5C1E2E01EA00F195C6 /* GCDAsyncSocket.m in Sources */,
 				69ED71BA1E13AC4000E88CEB /* ViewController2.m in Sources */,
 				69ED71A61E13A1A400E88CEB /* AppDelegate.m in Sources */,
 				691EEFA61E31E61B00F195C6 /* main.m in Sources */,
+				691EEFE41E35CD8D00F195C6 /* NetManager.m in Sources */,
 				691EEF641E2F082A00F195C6 /* BDecoder.m in Sources */,
 				691EEF771E2F88A200F195C6 /* AFSecurityPolicy.m in Sources */,
 				691EEF781E2F88A200F195C6 /* AFURLRequestSerialization.m in Sources */,
 				691EEF5D1E2E01EA00F195C6 /* GCDAsyncUdpSocket.m in Sources */,
-				691EEF821E30983900F195C6 /* TrackerInfo.m in Sources */,
 				691EEF791E2F88A200F195C6 /* AFURLResponseSerialization.m in Sources */,
+				691EEFEA1E35EAC300F195C6 /* Announce.m in Sources */,
 				691EEFAE1E31E6C500F195C6 /* NSObject+Entity.m in Sources */,
 				691EEF7A1E2F88A200F195C6 /* AFURLSessionManager.m in Sources */,
-				691EEF7F1E3097A800F195C6 /* Tracker.m in Sources */,
 				691EEF751E2F88A200F195C6 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

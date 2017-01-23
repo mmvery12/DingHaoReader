@@ -156,11 +156,14 @@ NS_ENUM(NSInteger,Type)
         NSString *sha1 = [self sha1:tempdata];
         [[firstrongqi firstObject] setObject:sha1 forKey:@"HASH"];
         
-        NSString *data = [self sha1data:tempdata];
-        [[firstrongqi firstObject] setObject:data forKey:@"info_hash"];
+        sha1 = [self sha1urlencoderstr:tempdata];
+        [[firstrongqi firstObject] setObject:sha1 forKey:@"info_hash"];
         
-        data = [self ret20bitString];
-        [[firstrongqi firstObject] setObject:data forKey:@"peer_id"];
+        sha1 = [self ret20bitString];
+        [[firstrongqi firstObject] setObject:sha1 forKey:@"peer_id"];
+        
+        NSData *data = [self sha1data:tempdata];
+        [[firstrongqi firstObject] setObject:data forKey:@"peer_id_data"];
         
     }
     return [firstrongqi firstObject];
@@ -183,11 +186,20 @@ NS_ENUM(NSInteger,Type)
 }
 
 
-+ (NSString *)sha1data:(NSData *)data
++ (NSString *)sha1urlencoderstr:(NSData *)data
 {
     unsigned char source[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (uint32_t)data.length, source);
     return [self urlencoder:source];
+}
+
++ (NSData *)sha1data:(NSData *)data
+{
+    unsigned char digest[CC_SHA1_DIGEST_LENGTH];
+    CC_SHA1(data.bytes, (uint32_t)data.length, digest);
+    NSData *content =[NSData dataWithBytes:digest length:20];
+    NSString *str = [NSString stringWithCharacters:digest length:20];//
+    return content;
 }
 
 +(NSString *)ret20bitString
@@ -199,29 +211,6 @@ NS_ENUM(NSInteger,Type)
 
 +(NSString *)urlencoder:(char *)source
 {
-//
-//const char source[20] = {0x0a, 0xf2, 0x44, 0x7f, 0xfd, 0x45, 0x17, 0x57, 0xdb, 0x2b, 0x73, 0x29, 0x65, 0xc0, 0xbc, 0x65, 0x95, 0xea, 0x78, 0x1e};
-//    const char source[20] = {
-//        0x0a,
-//        0xf2,
-//        0x44,
-//        0x7f,
-//        0xfd,
-//        0x45,
-//        0x17,
-//        0x57,
-//        0xdb,
-//        0x2b,
-//        0x73,
-//        0xc1,
-//        0x29,
-//        0x65,
-//        0xc0,
-//        0xbc,
-//        0x65,
-//        0x95,
-//        0xea,
-//        0x1e};
     NSMutableString *output = [NSMutableString string];
     for (int i = 0; i < 20; ++i) {
         const unsigned char thisChar = source[i];
@@ -233,7 +222,7 @@ NS_ENUM(NSInteger,Type)
                    (thisChar >= '0' && thisChar <= '9')) {
             [output appendFormat:@"%c", thisChar];
         } else {
-            [output appendFormat:@"\%%%02X", thisChar];
+            [output appendFormat:@"%%%02X", thisChar];
         }
     }
     // % 会被afurlencoder成%25，
