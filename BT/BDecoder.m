@@ -198,7 +198,7 @@ NS_ENUM(NSInteger,Type)
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (uint32_t)data.length, digest);
     NSData *content =[NSData dataWithBytes:digest length:20];
-    NSString *str = [NSString stringWithCharacters:digest length:20];//
+    NSString *str = [NSString stringWithCharacters:digest length:20];//char 直接频道string里面
     return content;
 }
 
