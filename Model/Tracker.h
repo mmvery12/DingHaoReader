@@ -19,6 +19,10 @@
 @property (nonatomic,strong)NSString *info_hash;
 @property (nonatomic,strong)NSString *peer_id;
 @property (nonatomic,copy)NSString *HASH;
+@property (nonatomic,strong)NSString *info_hash_data;
+
+@property (nonatomic,strong)NSNumber *download;
+
 @end
 
 

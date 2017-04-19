@@ -162,8 +162,8 @@ NS_ENUM(NSInteger,Type)
         sha1 = [self ret20bitString];
         [[firstrongqi firstObject] setObject:sha1 forKey:@"peer_id"];
         
-        NSData *data = [self sha1data:tempdata];
-        [[firstrongqi firstObject] setObject:data forKey:@"peer_id_data"];
+        NSString *data = [self sha1data:tempdata];
+        [[firstrongqi firstObject] setObject:data forKey:@"info_hash_data"];
         
     }
     return [firstrongqi firstObject];
@@ -172,7 +172,7 @@ NS_ENUM(NSInteger,Type)
 
 
 
-//sha1加密方式
+
 + (NSString *) sha1:(NSData *)data
 {
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
@@ -193,13 +193,12 @@ NS_ENUM(NSInteger,Type)
     return [self urlencoder:source];
 }
 
-+ (NSData *)sha1data:(NSData *)data
++ (NSString *)sha1data:(NSData *)data
 {
     unsigned char digest[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (uint32_t)data.length, digest);
-    NSData *content =[NSData dataWithBytes:digest length:20];
-    NSString *str = [NSString stringWithCharacters:digest length:20];//char 直接频道string里面
-    return content;
+    NSString *str = [NSString stringWithCharacters:(const unichar *)digest length:20];//char 直接频道string里面
+    return str;
 }
 
 +(NSString *)ret20bitString

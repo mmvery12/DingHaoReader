@@ -153,7 +153,7 @@
     long long mconnection_id = htonll(connection_id);
     int action = htonl(0);
     int transaction_id = htonl(123456);
-    NSString *hash_info = trackerserialization.tracker.info_hash;
+    NSString *hash_info = trackerserialization.tracker.info_hash_data;
     NSString *peer_id = trackerserialization.tracker.peer_id;
     
 //    [self.data appendData:[paramString dataUsingEncoding:NSUTF8StringEncoding]];
@@ -192,36 +192,22 @@
 {
 
 }
-/**
- * By design, UDP is a connectionless protocol, and connecting is not needed.
- * However, you may optionally choose to connect to a particular host for reasons
- * outlined in the documentation for the various connect methods listed above.
- *
- * This method is called if one of the connect methods are invoked, and the connection fails.
- * This may happen, for example, if a domain name is given for the host and the domain name is unable to be resolved.
- **/
+
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotConnect:(NSError * _Nullable)error;
 {
     self.announceblock(nil,error);
 }
-/**
- * Called when the datagram with the given tag has been sent.
- **/
+
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag;
 {
 
 }
-/**
- * Called if an error occurs while trying to send a datagram.
- * This could be due to a timeout, or something more serious such as the data being too large to fit in a sigle packet.
- **/
+
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didNotSendDataWithTag:(long)tag dueToError:(NSError * _Nullable)error;
 {
     self.announceblock(nil,error);
 }
-/**
- * Called when the socket has received the requested datagram.
- **/
+
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data
       fromAddress:(NSData *)address
 withFilterContext:(nullable id)filterContext;
